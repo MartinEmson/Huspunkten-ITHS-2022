@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*Description
+1. Root settings
+2. Body, html settings
+3. Navbar
+4.
+5.
+6.
+*/
+
+/* Root settings */
+* {
+font-family: Roboto;
+box-sizing: border-box;
+
+    --one: #026873;
+    --two: #0596A6;
+    --three: #03A6A6;
+    --four: #222d38;
+    --five: #DAD3C8;
+    --black: black;
+    --six: #726651;
+    --white: #ffffff;
+}
+
+body, html {
+   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: var(--five);
+
+}
+
+.btn {
+
+    border: none;
+    background-color: var(--six);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+
+}
+
+.btn2 {
+
+    border: none;
+    background-color:var(--black);
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: auto;
+    background-color: var(--four);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.brand-title {
+    font-size: 1.5rem; 
+    color: var(--white);
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+.navbar-links {
+    height: 100%;
+    background-color: var(--four);
+
+}
+
+.navbar-links ul {
+    display: flex;
+    margin-top: 2.5vh;
+    padding: 0;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem;
+    margin: 2vw;
+}
+
+.navbar-links li:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* Only visible in responsive mode, handled by javascript */
+.toggle-button {    
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+}
+
+.toggle-button bar { 
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+    
+}
